@@ -15,3 +15,5 @@ Curated resources and ZIP search links provide starting points, not verified liv
 
 ## Professional welcome screen
 The **Housing professionals** navigation item opens `professional.html`, a public orientation page with a privacy notice, rather than a shared PIN. Clicking Enter opens the anonymous assessment at `index.html#professional`. No authentication is claimed or provided.
+
+Professional assessment enhancements: unlimited optional additional expense rows, self-reported issue and contributing-factor dropdowns, urgency, household size, state/ZIP, and rule-based assistance suggestions using the existing static resource directory. All entries are held in page memory only, never saved; referrals never constitute eligibility findings or confirmed open applications.
