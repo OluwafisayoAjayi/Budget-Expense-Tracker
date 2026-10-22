@@ -1,29 +1,38 @@
-# Everyday Budget & Expense Tracker
+# Everyday Budget & Expense Tracker — expanded edition
 
-An independent, mobile-friendly website for household budgeting and daily expense tracking. No county-level data or third-party libraries are needed.
+An independent, accessible, responsive static budgeting website with no build dependencies. The application works with GitHub Pages.
 
 ## Features
-- Monthly budget calculator with grouped dropdown categories for housing, mortgage, utilities, food, transportation, medical expenses, credit cards, insurance, debt, family, savings, and more. Each category can be used multiple times with a description.
-- Budget summary in an expandable section, a single monthly budget doughnut/pie chart, balance and savings coverage.
-- Daily spending log with date, category, amount, and note; recent transactions and running daily/monthly totals.
-- Monthly budget snapshot history and a daily spending trend.
-- Print or save results as PDF using your browser's Print dialog; download a budget CSV, daily expenses CSV, or complete JSON backup. Import a prior JSON backup to restore/merge.
-- Local browser storage only. No login, account, remote database or online synchronization.
 
-## Publish as a separate GitHub Pages website
-1. On GitHub, create a **new public repository** named `Everyday-Budget-Expense-Tracker` (or another name).
-2. Upload `index.html`, `style.css`, `script.js`, and this `README.md` into the new repository root.
-3. Under **Settings → Pages**, select **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-4. The expected site address will be `https://YOUR-USERNAME.github.io/Everyday-Budget-Expense-Tracker/` if the repo name matches.
+- Monthly take-home budget calculator with customizable expense rows, including car-free transportation (bus, train, transit pass, bike share, rideshare).
+- Optional **gross** household income for a housing-cost assessment using 30% and 50% descriptive thresholds. Calculation combines entered housing and utility costs as an approximation; it is **not** an official determination, eligibility assessment, or eviction prediction.
+- Monthly pie/doughnut chart, expandable input summary, CSV downloads and browser print-to-PDF.
+- Daily expense logging, quick category buttons, editing amounts, deleting entries, and CSV export.
+- Monthly budget and daily spending history, locally saved in browser, with export/import of a JSON backup.
+- Recurring bill calendar-style upcoming reminders (only shown when page is opened; no notifications).
+- Personal savings goal, progress bar, and hypothetical what-if analysis.
+- State-selected support finder for all 50 states plus Washington, D.C. based on official national directories and 211, with select additional state-level links. **Does not assert that local programs are funded or accepting applications.**
 
-Do not place these files inside the old dashboard repository if you want them to be separate websites.
+## Publish
 
-## How it works
-- All monthly expenses are summed; monthly balance = entered monthly take-home income minus entered monthly expenses.
-- Savings coverage = entered emergency savings / entered monthly expenses; if no expenses are entered, coverage is marked not applicable.
-- Budget chart includes entered spending categories and positive remaining balance, but the negative balance is shown in the summary instead of as a pie slice.
-- Daily transactions are **not** automatically added to planned expenses; doing that would double count items such as groceries and rent. Daily entries show actual spending, while budget snapshots show the plan.
-- Saving a second budget for the same month creates another snapshot; monthly trend charts show the most recently saved snapshot for each month.
+1. Extract the ZIP and upload **index.html**, **style.css**, **script.js**, **README.md** to the root of your GitHub repository. (Do not upload the outer folder unless you want it to be part of the URL.)
+2. In GitHub **Settings → Pages**, set source to **Deploy from branch**, branch **main**, folder **/(root)**.
+3. Open `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/` after deployment completes.
 
-## Privacy and persistence
-Stored locally using `localStorage`. Browser data deletion, device changes, and private browsing can remove data. Back up JSON regularly. Importing a JSON backup merges records based on their IDs. This is a personal planning aid, not financial advice.
+## Privacy and limitations
+
+Data is stored in browser `localStorage`. It is not shared with a server, and will not automatically transfer between browsers, devices, or private sessions. Download JSON backups regularly. Results should be checked with professionals for financial/legal decisions. State and local program eligibility, funding, and application windows change and must be verified directly on the linked provider's website. No live state assistance database is connected. This site is not financial, legal, or benefits advice.
+
+## Assistance directory maintenance (important)
+
+The public `assistance-programs.json` file is a **static curated directory**, not a live service. Resources shown as “Official source reviewed” had their linked official page reviewed on October 22, 2026; this does **not** verify that an assistance application is currently accepting submissions, that funds remain, or that a household qualifies. Entries not individually reviewed remain labeled “Not verified”. The state selector covers all 50 states plus DC through the national LIHEAP, HUD, SNAP and 211 directories; state-specific curated entries are currently limited to MA, ME, NY, CA, and TX. Do not misrepresent national directory links as individual state program confirmations.
+
+To update: inspect official program pages, confirm URLs and latest rules directly, add or update the entries in `assistance-programs.json`, record the actual review date and source verification status, and publish a new commit. For **current application status**, check a dated agency notice, and avoid asserting an open window from a general program page. A static GitHub Pages site cannot monitor closures or intake changes automatically.
+
+The directory searches locally in the browser and never transmits a user's budget or ZIP input to any of the linked providers.
+
+
+## ZIP-based local assistance search
+Enter a state and optional five-digit ZIP code. The page opens area-specific searches on partner/referral sites, including 211, Findhelp, HUD, LIHEAP, and food-bank locators. **It does not retrieve a verified list of nearby agencies into the page or verify applications are open**, because those provider systems do not offer a public cross-directory live API for this static site. Nearby listings and availability must be checked directly on provider sites. No financial data is transmitted by this website.
+
+All fields on the monthly calculator are optional; blank expense lines are ignored. For a meaningful balance add take-home income; for housing burden add gross income and housing expense(s). Previous browser data is retained using the same localStorage key.
