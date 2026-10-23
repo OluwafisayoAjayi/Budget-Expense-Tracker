@@ -24,3 +24,7 @@ The professional page now includes a multi-select needs checklist, preliminary e
 
 ## Brand and homepage update
 Public-facing name: **Home & Financial Stability Hub**. Warm orange theme throughout, new introductory homepage, quick access to planning, spending tracker, assistance, and professionals. The spending tracker remains available because it helps users compare actual purchases with their monthly plan, but it is no longer part of the main brand name. Financial entries are intended to remain in active-page memory only.
+
+
+## My Financial History & Progress
+In the Trends section, choose **Upload previous reports** to import multiple JSON backup files, individual monthly budget CSV files, or daily-expense CSV exports. Supported exports are those produced by this website; PDF is not importable. Duplicate months prompt for confirmation. Alternatively, choose **Enter past financial information** to enter an earlier month and optional income, gross income, savings, arrears, utility debt, and unlimited categorised expenses. Compare selected periods, edit/remove months and download combined JSON history or CSV comparisons. Everything exists only in temporary JavaScript memory and clears when the page reloads or closes; download your history before leaving.
