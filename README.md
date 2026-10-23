@@ -28,3 +28,7 @@ Public-facing name: **Home & Financial Stability Hub**. Warm orange theme throug
 
 ## My Financial History & Progress
 In the Trends section, choose **Upload previous reports** to import multiple JSON backup files, individual monthly budget CSV files, or daily-expense CSV exports. Supported exports are those produced by this website; PDF is not importable. Duplicate months prompt for confirmation. Alternatively, choose **Enter past financial information** to enter an earlier month and optional income, gross income, savings, arrears, utility debt, and unlimited categorised expenses. Compare selected periods, edit/remove months and download combined JSON history or CSV comparisons. Everything exists only in temporary JavaScript memory and clears when the page reloads or closes; download your history before leaving.
+
+## Deployment reliability
+
+This ZIP includes an empty `.nojekyll` file to tell GitHub Pages to serve the static files without Jekyll processing. The files belong in the **repository root**. A GitHub Pages HTTP 500 at the **Deploy** action occurs at GitHub's deployment service; it is not proof of a website code problem. Retry the failed Pages job before replacing the files again.
