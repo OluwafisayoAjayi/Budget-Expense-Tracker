@@ -32,3 +32,6 @@ In the Trends section, choose **Upload previous reports** to import multiple JSO
 ## Deployment reliability
 
 This ZIP includes an empty `.nojekyll` file to tell GitHub Pages to serve the static files without Jekyll processing. The files belong in the **repository root**. A GitHub Pages HTTP 500 at the **Deploy** action occurs at GitHub's deployment service; it is not proof of a website code problem. Retry the failed Pages job before replacing the files again.
+
+## PDF reports
+On the Trends page, use **View / Save Financial Report (PDF)** to open a formatted print-ready report including budget history, expense details and month-by-month chart. Choose **Print → Save as PDF**. For professional assessments, generate the assessment first and use **View / Save Case Report (PDF)**. These reports are prepared in the browser; they do not upload financial data. Keep the separate financial history backup when you want to upload previous data to compare trends later.
