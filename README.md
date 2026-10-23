@@ -20,3 +20,7 @@ Professional assessment enhancements: unlimited optional additional expense rows
 
 ## Professional planning additions (October 2026)
 The professional page now includes a multi-select needs checklist, preliminary eligibility questions, urgent-case guidance, assistance referral suggestions, hypothetical one-time and ongoing support scenarios, an action plan, and follow-up checklists. All inputs and checklists remain in page memory only; reports can be downloaded or printed at the user's request. The website does not determine actual eligibility, confirm program funding or reserve assistance. The one-time grant sliders adjust arrears, not ordinary recurring expenses. No identifying client information should be entered.
+
+
+## Brand and homepage update
+Public-facing name: **Home & Financial Stability Hub**. Warm orange theme throughout, new introductory homepage, quick access to planning, spending tracker, assistance, and professionals. The spending tracker remains available because it helps users compare actual purchases with their monthly plan, but it is no longer part of the main brand name. Financial entries are intended to remain in active-page memory only.
