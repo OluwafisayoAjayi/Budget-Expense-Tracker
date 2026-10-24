@@ -35,3 +35,9 @@ This ZIP includes an empty `.nojekyll` file to tell GitHub Pages to serve the st
 
 ## PDF reports
 On the Trends page, use **View / Save Financial Report (PDF)** to open a formatted print-ready report including budget history, expense details and month-by-month chart. Choose **Print → Save as PDF**. For professional assessments, generate the assessment first and use **View / Save Case Report (PDF)**. These reports are prepared in the browser; they do not upload financial data. Keep the separate financial history backup when you want to upload previous data to compare trends later.
+
+
+## Professional workflow additions
+New in this edition: court deadline and disputed-arrears intake fields, a consent discussion prompt, an illustrative landlord–tenant repayment calculator, a preparation checklist, and CSV export of the planning checklist. The calculator displays affordability cautions and separately identifies landlord and household claimed balances. No data is sent to a server; the additional fields live only in the browser. No eligibility is verified and there is no live assistance inventory. The platform is NOT a case management system, legal service, eviction prediction tool, or a substitute for a HUD-required client record.
+
+**Validation recommended before organizational use**: review with housing counselors, legal-aid partners, and accessibility testers; check all referral links and application rules.
